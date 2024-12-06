@@ -1,18 +1,18 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
 import SearchBar from "./components/page-elements/search-bar";
+import NavigationBar from "./components/page-elements/navigation-bar";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div className="bg-black">
+    <div className="app-main bg-slate-950 h-screen w-screen flex justify-between ">
+      <span>
+        <NavigationBar />
+      </span>
+      <span className="app-item search w-1/2 ">
         <SearchBar />
-      </div>
-    </>
+      </span>
+      <span>Filter</span>
+    </div>
   );
 }
 
