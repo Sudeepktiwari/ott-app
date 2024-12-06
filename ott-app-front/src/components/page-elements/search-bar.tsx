@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const SearchBar = () => {
   const [isAnimating, setIsAnimating] = useState(false);
